@@ -4,6 +4,10 @@ import React from "react";
 import { Link, Route } from "react-router-dom";
 import { motion } from "framer-motion";
 
+const buttonVariants = {
+  hover: {},
+};
+
 const Home = () => {
   return (
     <motion.div
@@ -19,6 +23,10 @@ const Home = () => {
             scale: 1.1,
             textShadow: "0px 0px 8px rgb(255,255,255)",
             boxShadow: "0px 0px 8px rgb(255,255,255)",
+          }}
+          transition={{
+            yoyo: Infinity,
+            duration: 0.3,
           }}
         >
           Create Your Pizza
