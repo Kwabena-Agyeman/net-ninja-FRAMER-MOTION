@@ -20,10 +20,9 @@ const Header = () => {
         </svg>
       </div>
       <motion.div
-        initial={{
-          y: -250,
-        }}
+        initial={{ y: -250 }}
         animate={{ y: 0 }}
+        transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
         className='title'
       >
         <h1>Pizza Joint</h1>
